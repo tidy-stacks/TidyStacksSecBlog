@@ -1,0 +1,232 @@
+/* Elements in this Style sheet appear in the order of appearance on the page from top to bottom. In otherwords: Navigation through to Footer */
+
+/*Browser Reset and Universal Style*/
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Cabin", sans-serif;
+    font-size:20px;
+    line-height: normal;
+    background-color: #F8DCC8;
+  }
+  
+  /*Navigation Elements*/
+  
+  .logo{
+    height:6.2rem;
+  }
+  
+   nav{
+      position: absolute;
+      top:0px;
+      left:3rem;
+      width:98%;
+      height:6.2rem;
+      background: #161B31;
+      font-size: 0;
+      margin-left:30px;
+    }
+  
+  nav a{
+      font-family:"Cabin", sans-serif;
+      font-size:18px;
+      color:#B7C0C6;
+      text-decoration: none;
+      margin-top:3rem;
+      line-height: 20px;
+      position:relative;
+      z-index: 10;
+      display:inline-block;
+      text-align:center;
+    }
+  
+  nav a:hover {
+    color:#f5f5f8;
+  }
+  
+  nav .animation {
+    position:absolute;
+    height: 3px;
+    bottom: 0;
+    z-index:0;
+    background: #EE8031;
+    border-radius:8px;
+    transition: all .5 ease 1s;
+    }
+    
+  a:nth-child(1){
+    width: 100px;
+  }
+    
+  nav .start-home,a:nth-child(1):hover~.animation{
+    width:100px;
+    left:0;
+  }
+    
+  a:nth-child(2){
+    width: 110px;
+  }
+    
+  nav .start-blog,a:nth-child(2):hover~.animation{
+    width:110px;
+    left:100px;
+  }
+    
+  a:nth-child(3){
+    width: 100px;
+  }
+    
+  nav .start-about,a:nth-child(3):hover~.animation {
+    width:100px;
+    left:210px;
+  }
+    
+  a:nth-child(4){
+    width: 160px;
+  }
+    
+  nav .start-contact,a:nth-child(4):hover~.animation {
+    width:120px;
+    left:330px;
+    }
+  
+  /*Banner and About Section*/
+  
+  .banner{
+    margin-top: 4rem;
+    border: 3px solid #EE8031;
+    border-radius:5%
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  
+  .adventurer {
+    padding:8px;
+  }
+  
+  .hello{
+    text-align:justify;
+  }
+  .about {
+    margin-top: 6.5rem;
+    border: 1px solid #EE8031;
+    border-radius: 12px;
+    padding: 10px;
+    background:#ffffff
+  }
+  
+  .intro {
+    margin-top:5.5rem;
+    text-align: center;
+  }
+  
+  /*Blog Styles*/
+  
+  .posts {
+    margin-top: 5.5rem;
+    border: 1px solid #EE8031;
+    border-radius: 12px;
+    padding: 10px;
+    background:#ffffff
+  } 
+  
+  .title{
+    padding:10px;
+    text-align: center;
+    font-size:2.3rem;
+  }
+  
+  .keywords{
+   padding: 5px;
+   margin-bottom:5px;
+   font-weight:bolder;
+  }
+  
+  .cals{
+  display:flex;
+  float:right;
+  padding:5px;
+  }
+  
+  .blink{
+    text-decoration: none;
+    color: #EE8031;
+  }
+  
+  .blink:hover {
+    color:#071D2B
+  }
+  
+  .blink:visited{
+    color: #2F85E1
+  }
+  
+  .blog-text{
+    padding:20px;
+    margin-top: 30px;
+    text-align: justified;
+    width: 95%;
+  }
+  
+  .sharing{
+    margin-top:20px;
+    margin-left: -11px;
+    padding:15px;
+    width:75%
+  }
+  
+  .bimage1{
+    height:20.5rem;
+    border-radius:5%;
+    padding:10px;
+    margin-top:1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .bimage2{
+    height: 28rem;
+    width: 20rem;
+    border-radius:5%;
+    padding:10px;
+    margin-top:1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .outro{
+    margin-top:2.5rem;
+    margin-bottom:1rem;
+    text-align: center;
+    padding:15px;
+  }
+  
+  /*Footer Styles*/
+  .foot{
+    color: #f5f5f8;
+    font-size: 0.8rem;
+    background-color: #071D2B;
+    border: 1px solid #161B31;
+    border-radius: 8px;
+    padding: 15px;
+    height: 60px;
+  }
+  
+  .socials{
+    float: right;
+  }
+  
